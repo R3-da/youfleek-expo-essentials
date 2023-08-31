@@ -60,11 +60,11 @@ export default function CustomTextInput({
         style={{marginBottom: 10}}
         {...otherProps}
       />
-      {value.length > 0 && withClearButton && (
+      {/* {value.length > 0 && withClearButton && (
         <TouchableOpacity onPress={onClear}>
           <MaterialIcons name="clear" size={20} />
         </TouchableOpacity>
-      )}
+      )} */}
       {errorMessage && errorVisible && renderErrorCaption(errorMessage)}
     </>
   );

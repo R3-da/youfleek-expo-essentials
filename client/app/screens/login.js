@@ -39,12 +39,12 @@ const validationSchema = Yup.object({
 });
 
 export default function LoginScreen({ navigation }) {
-  const loginApi = useApi(authApi.login);
+  //const loginApi = useApi(authApi.login);
 
   const authContext = useContext(AuthContext);
   const theme = useTheme();
 
-  const loginHandler = async ({ email, password }) => {
+  /* const loginHandler = async ({ email, password }) => {
     const result = await loginApi.request(email, password);
 
     if (!result.ok) {
@@ -72,7 +72,7 @@ export default function LoginScreen({ navigation }) {
         routes: [{ name: "Home" }],
       });
     }, 300);
-  };
+  }; */
 
   return (
     <>
@@ -85,7 +85,7 @@ export default function LoginScreen({ navigation }) {
               email: "",
               password: "",
             }}
-            onSubmit={loginHandler}
+            //onSubmit={loginHandler}
             validationSchema={validationSchema}
           >
             {({
@@ -120,7 +120,7 @@ export default function LoginScreen({ navigation }) {
                     returnKeyType="next"
                     autoCapitalize="none"
                     autoCorrect={false}
-                    secure={true}
+                    //secure={true}
                     value={values.password}
                     onChangeText={handleChange("password")}
                     errorMessage={errors.password}
@@ -136,7 +136,7 @@ export default function LoginScreen({ navigation }) {
                 </ScrollView>
 
                 <Button
-                  loading={loginApi.loading}
+                  //loading={loginApi.loading}
                   onPress={handleSubmit}
                   style={{ marginTop: 20 }}
                 >

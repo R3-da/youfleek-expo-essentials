@@ -1,4 +1,4 @@
-import * as SecureStore from "expo-secure-store";
+/* import * as SecureStore from "expo-secure-store";
 import jwt_decode from "jwt-decode";
 import authApi from "../api/auth";
 
@@ -36,3 +36,4 @@ const removeToken = async () => {
 };
 
 export default { getToken, getUser, storeToken, removeToken };
+ */
