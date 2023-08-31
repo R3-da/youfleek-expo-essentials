@@ -1,4 +1,4 @@
-/* import { create } from "apisauce";
+import { create } from "apisauce";
 import authStorage from "../auth/storage";
 import Constants from "expo-constants";
 
@@ -13,4 +13,3 @@ apiClient.addAsyncRequestTransform(async (request) => {
 });
 
 export default apiClient;
- */
