@@ -3,10 +3,8 @@ import authStorage from "../utilities/authStorage";
 import Constants from "expo-constants";
 import cache from "../utilities/cache";
 
-const { manifest } = Constants;
-
 const apiClient = create({
-  baseURL: `http://${manifest.debuggerHost.split(":").shift()}:8000`,
+  baseURL: `http://${Constants.expoGoConfig.debuggerHost.split(":").shift()}:8000`,
 });
 
 // Add caching to the GET API calls
