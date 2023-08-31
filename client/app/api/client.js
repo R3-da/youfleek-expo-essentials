@@ -1,10 +1,10 @@
 import { create } from "apisauce";
 import authStorage from "../utilities/authStorage";
-import Constants from "expo-constants";
 import cache from "../utilities/cache";
+import settings from "../config/settings";
 
 const apiClient = create({
-  baseURL: `http://${Constants.expoGoConfig.debuggerHost.split(":").shift()}:8000`,
+  baseURL: settings.apiUrl,
 });
 
 // Add caching to the GET API calls
