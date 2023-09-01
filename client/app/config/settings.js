@@ -16,7 +16,7 @@ import {
   PROD_MESSAGING_SENDER_ID,
   PROD_APP_ID,
   PROD_MEASUREMENT_ID,
-} from "@env";
+} from '@env';
 
 const settings = {
   dev: {
